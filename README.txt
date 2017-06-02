@@ -1,0 +1,1 @@
+This is an Example project for Apache cxf.
