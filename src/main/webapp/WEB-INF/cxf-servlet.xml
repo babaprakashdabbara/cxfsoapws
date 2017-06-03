@@ -10,7 +10,7 @@
                            http://cxf.apache.org/schemas/configuration/soap.xsd
                            http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
-    <jaxws:server id="amountService" serviceClass="com.java.cxf.soap.ws.Amount" address="/amountProcessor">
+    <jaxws:server id="amountservice" address="/amountservice">
         <jaxws:serviceBean>
             <bean class="com.java.cxf.soap.ws.AmountServiceImpl"/>
         </jaxws:serviceBean>
