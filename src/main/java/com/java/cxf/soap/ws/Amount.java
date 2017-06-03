@@ -11,7 +11,6 @@ import javax.xml.ws.WebFault;
  * Created by Babaprakash Dabbara on 02-06-2017.
  */
 @WebService
-@SOAPBinding
 public interface Amount {
 
     @WebMethod
