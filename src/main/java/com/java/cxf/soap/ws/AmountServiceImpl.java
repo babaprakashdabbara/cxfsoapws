@@ -5,7 +5,7 @@ package com.java.cxf.soap.ws;
  */
 public class AmountServiceImpl implements Amount {
 
-    private final Integer amount = Integer.valueOf(0);
+    private final static Integer amount = Integer.valueOf(0);
 
     @Override
     public Integer addAmount(Integer amountToAdd) {

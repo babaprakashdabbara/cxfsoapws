@@ -13,7 +13,7 @@ public interface Amount {
 
     @WebMethod
     @WebResult(name = "totalAmount")
-    Integer addAmount(@WebParam Integer amountToAdd);
+    Integer addAmount(@WebParam(name = "amountToAdd") Integer amountToAdd);
 
     @WebMethod
     @WebResult(name = "totalAmount")
