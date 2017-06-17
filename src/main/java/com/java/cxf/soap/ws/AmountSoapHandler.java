@@ -21,7 +21,7 @@ public class AmountSoapHandler implements SOAPHandler<SOAPMessageContext> {
 		if(!isResponse) {
 			SOAPMessage soapMessage = context.getMessage();
 			try {
-				Iterator allAttributes = soapMessage.getSOAPBody().getAllAttributes();
+				Iterator<?> allAttributes = soapMessage.getSOAPBody().getAllAttributes();
 				while (allAttributes.hasNext()) {
 					Node node = (Node)allAttributes.next();
 					System.out.println(node.getLocalName());
